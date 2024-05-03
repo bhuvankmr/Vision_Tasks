@@ -1,0 +1,5 @@
+<launch>
+    <node name = "talker" pkg = "lab1_pkg" type = "talker.py"/>
+    <node name = "relay" pkg = "lab1_pkg" type = "relay.py"/>
+    <rosparam file="$(find lab1_pkg)/config/params.yaml" />
+</launch>
